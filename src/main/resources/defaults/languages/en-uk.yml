@@ -1,0 +1,38 @@
+# Language File
+
+# Placeholder Usage:
+# {%tag%} - Format of a placeholder
+# Examples:
+# {%prefix%} - Displays the Prefix from the lang file
+# {%player.name%} - Displays the player name
+# Language config values:
+# You can use any value from any config file
+# Examples:
+# {%messages.lang.name%} - Displays the lang name from below
+# {%config.version%} - Displays the version value from the config.yml file
+
+# English - United Kingdom
+lang:
+  # Key
+  key: 'en-uk'
+  # The name of the language
+  name: 'English'
+  # Which nationality
+  location: 'United Kingdom'
+  # How to format when displaying the language information
+  format: '{%messages.lang.name%} - {%messages.lang.location%}'
+
+# Prefix can be used anywhere with the {%prefix%} tag
+prefix: '&cChallenges &8|&r'
+# When a player does not have the required permission for an action, he will get that message
+no_perms: '{%prefix%} &cNo Permission to use this!'
+# When a searched player is not online, the command sender will get that message
+player_not_found: '{%prefix%} &cThe Player {%player.name%} could not be found!'
+# Console can not execute the command
+not_a_console_command: '{%prefix%} &cYou have to be a player to execute this command!'
+
+
+# All inventory strings
+inventories:
+  main_inventory:
+    title: '&bMain Inventory'

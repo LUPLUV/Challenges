@@ -1,0 +1,6 @@
+# Config file
+
+# Selected language
+# You have to enter the key, which is entered in the file name and lang.key value
+# Examples: en-uk, de-de, en-us
+selected_language: 'en-uk'

@@ -1,0 +1,17 @@
+name: Challenges
+version: 1.0.0
+author: LUPLUV
+description: Challenges System
+website: https://lupluv.dev
+
+main: dev.lupluv.challenges.Challenges
+
+commands:
+  challenge:
+    description: 'Manage your Challenge'
+    aliases:
+      - challenges
+  settings:
+    description: 'Manage Challenge settings'
+    aliases:
+      - options
