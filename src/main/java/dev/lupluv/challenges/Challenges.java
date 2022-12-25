@@ -1,5 +1,6 @@
 package dev.lupluv.challenges;
 
+import dev.lupluv.challenges.challenges.ChallengeManager;
 import dev.lupluv.challenges.commands.ChallengesCmd;
 import dev.lupluv.challenges.files.FileProvider;
 import dev.lupluv.challenges.inventories.MainInventory;
@@ -21,6 +22,9 @@ public class Challenges extends JavaPlugin {
 
     // Providers
     private FileProvider fileProvider;
+
+    // Managers
+    private ChallengeManager challengeManager;
 
     // Inventories and click handlers
     private MainInventory mainInventory;
@@ -59,6 +63,9 @@ public class Challenges extends JavaPlugin {
         registerEventHandlers(getServer().getPluginManager());
 
         // Register commands
+
+        // Initialize Managers
+        challengeManager = new ChallengeManager();
 
 
     }
@@ -107,5 +114,9 @@ public class Challenges extends JavaPlugin {
 
     public MainInventory getMainInventory() {
         return mainInventory;
+    }
+
+    public ChallengeManager getChallengeManager() {
+        return challengeManager;
     }
 }

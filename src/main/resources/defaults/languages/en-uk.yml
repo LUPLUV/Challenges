@@ -36,3 +36,6 @@ not_a_console_command: '{%prefix%} &cYou have to be a player to execute this com
 inventories:
   main_inventory:
     title: '&bMain Inventory'
+    contents:
+      challenge_status:
+        display_name: ''
